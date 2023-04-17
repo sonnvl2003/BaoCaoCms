@@ -1,130 +1,217 @@
- /* Css for user avatar */
- #avatar {
-     width: 30px;
-     height: 30px;
- }
+/* Css for header */
 
- .header-search-form input {
-     border: 2px solid #999 !important;
- }
+.header-navigation-wrapper {
+    margin-left: auto;
+    margin-right: 3rem;
+}
 
- .header-search-form button {
-     background: #fff !important;
-     border: 2px solid #999;
-     color: #999 !important;
- }
+.custom-dropdown-menu {
+    position: absolute;
+    width: 150px;
+    font-size: 1.6rem;
+    top: 100%;
+    right: 0;
+    display: none;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
 
- .avatar-wrapper {
-     cursor: pointer;
- }
+.custom-dropdown-menu li {
+    margin: 0;
+    padding: 7px 20px;
+}
 
- .dropdown-wrapper {
-     position: relative;
-     padding: 10px 0;
- }
+.custom-dropdown-menu li:hover {
+    background: #f8f8f8;
+}
 
- .custom-dropdown-menu {
-     position: absolute;
-     top: 100%;
-     right: 0;
-     padding: 0;
-     display: none;
-     background: #fff;
-     border-radius: 5px;
-     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
- }
+.custom-dropdown-menu li a {
+    color: #000;
+}
 
- .custom-dropdown-menu li {
-     padding: 5px 20px;
- }
+.dropdown-wrapper:hover .custom-dropdown-menu {
+    display: block;
+    text-align: center;
+}
 
- .custom-dropdown-menu li a {
-     color: #000;
- }
+/* Css for header */
+#site-header {
+    background: #f8f8f8;
+    align-items: center;
+    justify-content: center !important;
+}
 
- .dropdown-wrapper:hover .custom-dropdown-menu {
-     display: block;
- }
+#site-header .header-inner {
+    padding: 0;
+}
 
- /* Css for footer (basic) */
- #custom-footer,
- .bg-footer-custom {
-     background: #007b5e;
-     color: #fff !important;
-     font-size: 16px !important;
-     padding-bottom: 40px;
- }
+#site-header .site-title {
+    color: #7d7d8e;
+    font-weight: normal;
+}
 
- .bg-footer-custom {
-     padding-top: 40px;
- }
+#site-header .header-titles {
+    padding: 2.5rem 2rem 2.5rem 0;
+}
 
- #custom-footer p,
- #custom-footer h6 {
-     font-size: 16px !important;
- }
+#site-header #home {
+    font-size: 1.6rem;
+    color: #7d7d8e;
+    padding: 3.2rem 1.5rem;
+}
 
- #custom-footer ul.social {
-     font-size: 25px;
- }
+.active {
+    background: #e7e7e7;
+}
 
- #custom-footer {
-     max-width: unset;
- }
+#site-header .search-custom-modal {
+    padding-left: 2rem;
+}
 
- #custom-footer a {
-     color: #fff !important;
- }
+#site-header .search-custom-modal .btn-outline-secondary {
+    margin-left: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: .2rem solid #e0e0e0;
+}
 
- #custom-footer a i {
-     transition: 250ms;
- }
+#site-header .search-custom-modal .form-control {
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border: .2rem solid #e0e0e0;
+}
 
- #custom-footer a i.fa {
-     transition: 400ms;
- }
+#site-header .primary-menu>li>a {
+    color: #7d7d8e;
+    font-weight: normal;
+    font-size: 1.6rem;
+}
 
- #custom-footer a i:hover {
-     transform: scale(1.3);
- }
+#site-header .menu-wrapper .toggle-inner {
+    display: flex;
+    flex-direction: column;
+}
 
- /* Css for widget footer */
- .custom-widget-area-wrap {
-     display: flex;
-     justify-content: space-between;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- }
+.header-inner .toggle-wrapper::before {
+    height: 0;
+}
 
- .custom-widget-area h3 {
-     padding: 5px 10px;
-     border-left: 3px solid #fff;
- }
+.header-inner .toggle {
+    height: 6.5rem;
+}
 
- .custom-widget-area .wp-block-latest-posts>li>a {
-     font-weight: normal;
-     color: #fff;
-     padding: 7px 0;
-     line-height: 0;
- }
+.toggle-inner .toggle-text {
+    font-size: 1rem;
+    top: 5rem;
+}
 
- .custom-widget-area ul {
-     margin: 20px 0 !important;
- }
+/* Css for user avatar */
+#avatar {
+    width: 40px;
+    height: 40px;
+}
 
- .custom-widget-area li {
-     margin-left: 0;
- }
+.avatar-wrapper a {
+    width: 40px;
+}
 
- .custom-widget-area .wp-block-latest-posts>li {
-     margin: 0 !important;
- }
+.avatar-wrapper span {
+    font-size: 1.6rem !important;
+}
 
- .custom-widget-area ul>li>a {
-     color: #fff !important;
- }
+.avatar-wrapper {
+    align-items: center;
+    text-align: center !important;
+    cursor: pointer;
+}
 
- .custom-widget-area ul li::before {
-     font-family: FontAwesome;
-     content: "\f101";
-     padding-right: 5px;
- }
+.dropdown-wrapper {
+    position: relative;
+    padding: 10px 0;
+}
+
+
+/* Css for footer (basic) */
+#custom-footer,
+.bg-footer-custom {
+    background: #007b5e;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding-bottom: 40px;
+}
+
+.bg-footer-custom {
+    padding-top: 40px;
+}
+
+#custom-footer p,
+#custom-footer h6 {
+    font-size: 16px !important;
+}
+
+#custom-footer ul.social {
+    font-size: 25px;
+}
+
+#custom-footer {
+    max-width: unset;
+}
+
+#custom-footer a {
+    color: #fff !important;
+}
+
+#custom-footer a i {
+    transition: 250ms;
+}
+
+#custom-footer a i.fa {
+    transition: 400ms;
+}
+
+#custom-footer a i:hover {
+    transform: scale(1.3);
+}
+
+/* Css for widget footer */
+.custom-widget-area-wrap {
+    display: flex;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.custom-widget-area h3 {
+    padding: 5px 10px;
+    border-left: 3px solid #fff;
+}
+
+.custom-widget-area .wp-block-latest-posts>li>a {
+    font-weight: normal;
+    color: #fff;
+    padding: 7px 0;
+    line-height: 0;
+}
+
+.custom-widget-area ul {
+    margin: 20px 0 !important;
+}
+
+.custom-widget-area li {
+    margin-left: 0;
+}
+
+.custom-widget-area .wp-block-latest-posts>li {
+    margin: 0 !important;
+}
+
+.custom-widget-area ul>li>a {
+    color: #fff !important;
+}
+
+.custom-widget-area ul li::before {
+    font-family: FontAwesome;
+    content: "\f101";
+    padding-right: 5px;
+}
