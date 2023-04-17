@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'wordpress_test' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '123456' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'rLgK-3}9C%Bu*U3w1+L/d@sK:}9 %8YqUkTLd(sx.C-i&]~>J][@1(amu${~CzT?' );
-define( 'SECURE_AUTH_KEY',  '!Oo+n3yyH=3Xx(E&tWTX!>I*X(Dg3?Z)N{`s8?|Y#<V]q~S<(HnmPzAZ3S]}O74T' );
-define( 'LOGGED_IN_KEY',    '<1^v]/jV^$4(KH{>xnoq^VR~~wfXg=KCSP;C!b{>V3us+!Q5Yn$D2N&f|-#jB| !' );
-define( 'NONCE_KEY',        'Jgmvce~L2A!L{}Cu(rsEkKOJ6,nPPnu@klXwP2@gXSQ6dd0f$KFcQ7_BM^X.E)+W' );
-define( 'AUTH_SALT',        'VN/}X[LLANtE1?rl?bs&!E[CA{z5{OD7|wgmaBxE.n@a6$an}(wr{{*o>0U^dqNi' );
-define( 'SECURE_AUTH_SALT', 'Q>D631tVf&*IU|s*1C=oKr4]~H+B_jRN1!(!!dT]wj};t0J)m<%|#eR~g~$aatg}' );
-define( 'LOGGED_IN_SALT',   '&:n0djlh!$TXYo0V3nMe^}x4KT3X%bzJ[B}JsSu!uJz^1{H}<A_h{*X_(=/9*w4}' );
-define( 'NONCE_SALT',       '&fc<DftxZCy#VSmz9eu~}HH9dWgl;JF17OY(jrcIKbZY? Fy`?^,|[]{P,@*OE5L' );
+define( 'AUTH_KEY',         '84`?>Mh(nnCr)MgJa=~Sc}yF|y d[V]Uv.ct5bLd>a_o6uAN+rEChN!(sZOZj?P%' );
+define( 'SECURE_AUTH_KEY',  '1exv:d[kF>6%h #Wc-^V#I=?okm?v*tH}ksAs3ZQ]99O}>{(uobMt*M:?_xq5Vtu' );
+define( 'LOGGED_IN_KEY',    'G^D+3B6oF>87r#Sb#H spM?6b:^GJ:gXf/hEL|L$!kxD3hYC41!C4f^O1zl2%P+#' );
+define( 'NONCE_KEY',        'rx=,q&U(2mlFAXo,.Gn&.suJ?C8#I!n_o]2.<)YI}x7zpSX~h6R>W:__y/h6g:N0' );
+define( 'AUTH_SALT',        'rS%L]KzBOK{1Cb?qq0_vu)o!gwxs7To8dM[_R*u;ArH6x`Hgje7KCM},R+ES {Gm' );
+define( 'SECURE_AUTH_SALT', '~WJijFje{FvNGcI3KH0+nmyTdyKy7=0uFGc)4WUmVwp@!xfRbf$46d!gzpaL=gD7' );
+define( 'LOGGED_IN_SALT',   '+GUd;IXH=$|=ln$Y3i|<<:1s(H^CZ10pgS5x#P3EAx}qZ|+I3yLuh-=~FUSv~*hP' );
+define( 'NONCE_SALT',       'EV789rh4%&rk2z6</nmK C<c*NCQ78*v<BLXJ,]E:NAV/:c$Mi/_q-fHj8Y$@xm&' );
 
 /**#@-*/
 
