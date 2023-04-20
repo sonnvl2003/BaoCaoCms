@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying single posts and pages.
  *
@@ -14,22 +15,40 @@ get_header();
 
 <main id="site-content">
 
-	<?php
+	<div class="row">
 
-	if ( have_posts() ) {
+		<div class="col-md-4">
+			<div class="__categories">
+				<div class="crossedbg"></div>
+				<?php dynamic_sidebar('sidebar-1'); ?>
+			</div>
+		</div>
+		<div class="col-md-4">
 
-		while ( have_posts() ) {
-			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
-		}
-	}
+			<?php
 
-	?>
+			if (have_posts()) {
 
+				while (have_posts()) {
+					the_post();
+
+					get_template_part('template-parts/content', get_post_type());
+				}
+			}
+
+
+			?>
+		</div>
+		<div class="col-md-4">
+			<div class="__recent">
+				<?php dynamic_sidebar('sidebar-3'); ?>
+			</div>
+		</div>
+	</div>
 </main><!-- #site-content -->
 
-<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+<?php get_template_part('template-parts/footer-menus-widgets'); ?>
 
 <?php
 get_footer();
