@@ -6603,18 +6603,11 @@ p {
 	position: relative;
 }
 
-.__categories h3 {
-	font-size: 3em;
-}
+.__categories h3 {font-size: 3em;}
 
-.__categories strong {
-	margin-left: -150px !important;
-}
+.__categories strong {margin-left: -150px !important;}
 
-.__categories .cat-item {
-	font-size: 2em;
-}
-
+.__categories .cat-item {font-size: 2em;}
 
 .__categories .wp-block-categories-list {
 	background: #fafafa;
@@ -6638,16 +6631,11 @@ p {
 	font-size: 2em;
 	padding-right: 0.5em;
 	position: relative;
-	top: 0.15em;
-}
+	top: 0.15em;}
 
-.__categories .wp-block-categories a {
-	font-weight: normal !important;
-}
+.__categories .wp-block-categories a {font-weight: normal !important;}
 
-.__categories .wp-block-categories {
-	font-weight: normal !important;
-}
+.__categories .wp-block-categories {font-weight: normal !important;}
 
 .__categories .cat-item {
 	border-bottom: 2px #f1f1f1 solid !important;
@@ -6663,18 +6651,11 @@ p {
 	position: relative;
 }
 
-.__recent h3 {
-	font-size: 3em !important;
-}
+.__recent h3 {font-size: 3em !important;}
 
-.__recent strong {
-	margin-left: -150px !important;
-}
+.__recent strong {margin-left: -150px !important;}
 
-.__recent li {
-	font-size: 2em;
-}
-
+.__recent li {font-size: 2em;}
 
 .__recent .wp-block-latest-posts__list {
 	background: #fafafa;
@@ -6683,7 +6664,6 @@ p {
 	margin-top: -200px;
 }
 
-
 .__recent .crossedbg {
 	background: url(http://fit.tdc.edu.vn/addons/default/themes/bootstrapThree/img/bg_cr_grey.png);
 	width: 300px;
@@ -6691,7 +6671,6 @@ p {
 	position: absolute;
 	top: 33%
 }
-
 
 .__recent li:before {
 	font-family: Arial, Helvetica, sans-serif;
@@ -6703,14 +6682,9 @@ p {
 	top: 0.15em;
 }
 
+.__recent .wp-block-latest-posts a {font-weight: normal !important;}
 
-.__recent .wp-block-latest-posts a {
-	font-weight: normal !important;
-}
-
-.__recent .wp-block-latest-posts {
-	font-weight: normal !important;
-}
+.__recent .wp-block-latest-posts {font-weight: normal !important;}
 
 
 .__recent li {
