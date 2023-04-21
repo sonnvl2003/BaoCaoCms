@@ -42,6 +42,7 @@ get_header();
 		</div>
 		<div class="col-md-4">
 			<div class="__recent">
+			<div class="crossedbg"></div>
 				<?php dynamic_sidebar('sidebar-3'); ?>
 			</div>
 		</div>
