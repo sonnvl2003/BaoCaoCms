@@ -54,6 +54,25 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
+/* My css */
+.list_new_view {
+    background: #fff;
+    width: 70%;
+	height: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15%;
+	
+}
+.topnewstime {
+    text-align: center;
+}
+.topnewstime span:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------- */
 
 html,
 body {
@@ -3223,7 +3242,7 @@ figure.wp-block-gallery.alignfull {
 	background: #fff;
 	border-radius: 50%;
 	color: #cd2653;
-	content: "â€";
+	content: "”";
 	display: block;
 	font-size: 6.2rem;
 	font-weight: 500;
@@ -4357,7 +4376,7 @@ div.comment:first-of-type {
 }
 
 .widget_rss cite::before {
-	content: "â€” ";
+	content: "— ";
 }
 
 /* Widget: Search ---------------------------- */
@@ -6371,6 +6390,9 @@ a.to-the-top>* {
 }
 
 @media (min-width: 1280px) {
+=======
+@media ( min-width: 1280px ) {
+>>>>>>> 3-ChuDinhHanh(content_and_search)
 
 	/* Blocks -------------------------------- */
 
@@ -6513,6 +6535,7 @@ a.to-the-top>* {
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
+<<<<<<< HEAD
 
 }
 
