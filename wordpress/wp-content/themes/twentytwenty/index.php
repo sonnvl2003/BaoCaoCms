@@ -1,5 +1,5 @@
-
 <?php
+
 /**
  * The main template file
  *
@@ -25,7 +25,7 @@ get_header();
 	$archive_title    = '';
 	$archive_subtitle = '';
 
-	if ( is_search() ) {
+	if (is_search()) {
 		/**
 		 * @global WP_Query $wp_query WordPress Query object.
 		 */
@@ -33,11 +33,11 @@ get_header();
 
 		$archive_title = sprintf(
 			'%1$s %2$s',
-			'<span class="color-accent">' . __( 'Search:', 'twentytwenty' ) . '</span>',
+			'<span class="color-accent">' . __('Search:', 'twentytwenty') . '</span>',
 			'&ldquo;' . get_search_query() . '&rdquo;'
 		);
 
-		if ( $wp_query->found_posts ) {
+		if ($wp_query->found_posts) {
 			$archive_subtitle = sprintf(
 				/* translators: %s: Number of search results. */
 				_n(
@@ -46,61 +46,63 @@ get_header();
 					$wp_query->found_posts,
 					'twentytwenty'
 				),
-				number_format_i18n( $wp_query->found_posts )
+				number_format_i18n($wp_query->found_posts)
 			);
 		} else {
-			$archive_subtitle = __( 'We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty' );
+			$archive_subtitle = __('We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty');
 		}
-	} elseif ( is_archive() && ! have_posts() ) {
-		$archive_title = __( 'Nothing Found', 'twentytwenty' );
-	} elseif ( ! is_home() ) {
+	} elseif (is_archive() && !have_posts()) {
+		$archive_title = __('Nothing Found', 'twentytwenty');
+	} elseif (!is_home()) {
 		$archive_title    = get_the_archive_title();
 		$archive_subtitle = get_the_archive_description();
 	}
 
-	if ( $archive_title || $archive_subtitle ) {
-		?>
+	if ($archive_title || $archive_subtitle) {
+	?>
 
 		<header class="archive-header has-text-align-center header-footer-group">
 
 			<div class="archive-header-inner section-inner medium">
 
-				<?php if ( $archive_title ) { ?>
-					<h1 class="archive-title"><?php echo wp_kses_post( $archive_title ); ?></h1>
+				<?php if ($archive_title) { ?>
+					<h1 class="archive-title"><?php echo wp_kses_post($archive_title); ?></h1>
 				<?php } ?>
 
-				<?php if ( $archive_subtitle ) { ?>
-					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
+				<?php if ($archive_subtitle) { ?>
+					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post(wpautop($archive_subtitle)); ?></div>
 				<?php } ?>
 
 			</div><!-- .archive-header-inner -->
 
 		</header><!-- .archive-header -->
 
-		<?php
+	<?php
 	}
-//Xu ly neu co bai viet
-	if ( have_posts() ) {
+	//Xu ly neu co bai viet
+
+	if (have_posts()) {
 		//Modul xuat ra gia tri tim kiem duoc
 		//Xu ly tim kiem va xuat ra gia tri
-	if ( is_search()) {
-		while ( have_posts() ) {
-			//Modul xuat ra tri tim kiem
-			//Nhan tat ca cac bai post tu database
-			the_post();
-			//Do du lieu tu database
-			$_post = get_post(); 
-			//Nhan tieu de bai viet
-			$_title = $_post->post_title;
-			//Nhan noi dung bai viet tu database
-			$post_content = $_post->post_content;
-			//Xu ly lay ngay thang duoc tao tu database
-			$day = substr(get_post()->post_date, 8, 2);
-			$month = substr(get_post()->post_date, 5, 2);
-			$year = substr(get_post()->post_date, 0, 4);
-			//Nhan url duoc tao tu database
-			$post_url = get_permalink();
-			echo "<div class='list_new_view'>
+		if (is_search()) {
+			while (have_posts()) {
+				//Modul xuat ra tri tim kiem
+				//Nhan tat ca cac bai post tu database
+				the_post();
+				//Do du lieu tu database
+
+				$_post = get_post();
+				//Nhan tieu de bai viet
+				$_title = $_post->post_title;
+				//Nhan noi dung bai viet tu database
+				$post_content = $_post->post_content;
+				//Xu ly lay ngay thang duoc tao tu database
+				$day = substr(get_post()->post_date, 8, 2);
+				$month = substr(get_post()->post_date, 5, 2);
+				$year = substr(get_post()->post_date, 0, 4);
+				//Nhan url duoc tao tu database
+				$post_url = get_permalink();
+				echo "<div class='list_new_view'>
 			<div class='row'>
 				<div class='col-md-7 top_news_block_desc'>
 					<div class='row'>
@@ -118,27 +120,27 @@ get_header();
 				</div>
 			</div>
 			</div>";
-		}
-	}else {
-		//Xuat ra tat ca cac bai viet khong biet truoc so luong nen sai While
-		//Xuat ra danh sach bai viet tu database
-	while ( have_posts() ) {
-		
-		//Nhan tat ca cac bai post tu database
-		the_post();
-		//Do du lieu tu database
-		$_post = get_post(); 
-		//Nhan tieu de bai viet
-		$_title = $_post->post_title;
-		//Nhan noi dung bai viet tu database
-		$post_content = $_post->post_content;
-		//Xu ly lay ngay thang duoc tao tu database
-		$day = substr(get_post()->post_date, 8, 2);
-		$month = substr(get_post()->post_date, 5, 2);
-		$year = substr(get_post()->post_date, 0, 4);
-		//Nhan url duoc tao tu database
-	    $post_url = get_permalink();
-		echo "<div class='list_new_view'>
+			}
+		} else {
+			//Xuat ra tat ca cac bai viet khong biet truoc so luong nen sai While
+			//Xuat ra danh sach bai viet tu database
+			while (have_posts()) {
+
+				//Nhan tat ca cac bai post tu database
+				the_post();
+				//Do du lieu tu database
+				$_post = get_post();
+				//Nhan tieu de bai viet
+				$_title = $_post->post_title;
+				//Nhan noi dung bai viet tu database
+				$post_content = $_post->post_content;
+				//Xu ly lay ngay thang duoc tao tu database
+				$day = substr(get_post()->post_date, 8, 2);
+				$month = substr(get_post()->post_date, 5, 2);
+				$year = substr(get_post()->post_date, 0, 4);
+				//Nhan url duoc tao tu database
+				$post_url = get_permalink();
+				echo "<div class='list_new_view'>
 		<div class='row'>
 			<div class='col-md-7 top_news_block_desc'>
 				<div class='row'>
@@ -147,7 +149,7 @@ get_header();
 						<span class='topnewsmonth'>Tháng $month</span><br>
 					</div>
 					<div class='col-md-9 col-xs-9 shortdesc'>
-						<h4>
+						<h4 style='font-size:30px;'>
 							<a href='$post_url'>$_title</a></h4>
 						<p>$post_content<a href='$post_url'>[...]</a></p>
 					</div>
@@ -156,38 +158,36 @@ get_header();
 			</div>
 		</div>
 		</div>";
-	}
-	}
-	
-		
-	} elseif ( is_search() ) {
-		?>
+			}
+		}
+	} elseif (is_search()) {
+	?>
 
 		<div class="no-search-results-form section-inner thin">
 
 			<?php
 			get_search_form(
 				array(
-					'aria_label' => __( 'search again', 'twentytwenty' ),
+					'aria_label' => __('search again', 'twentytwenty'),
 				)
 			);
 			?>
 
 		</div><!-- .no-search-results -->
 
-		<?php
+	<?php
 	}
 
 
-		
-	
+
+
 	?>
-	
-	<?php get_template_part( 'template-parts/pagination' ); ?>
+
+	<?php get_template_part('template-parts/pagination'); ?>
 
 </main><!-- #site-content -->
 
-<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+<?php get_template_part('template-parts/footer-menus-widgets'); ?>
 
 <?php
 get_footer();
