@@ -182,18 +182,7 @@ get_header();
 		
 	
 	?>
-	<!-- Searchbar -->
-	<div class="wrapper">
-		<div class="search-box-wrapper">
-			<div class="search-box" style="margin: 0 300px;">
-				<form action="" method="get" class="search-form">
-					<input type="text" class="search-field" name="s" placeholder="Search">
-					<input class="bottom_search" type="submit" class="search-submit" value="submit">
-				</form>
-			</div>
-	</div>
-	</div>
-
+	
 	<?php get_template_part( 'template-parts/pagination' ); ?>
 
 </main><!-- #site-content -->
