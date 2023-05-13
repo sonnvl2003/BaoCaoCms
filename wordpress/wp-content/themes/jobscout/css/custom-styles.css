@@ -88,3 +88,16 @@ h2.custom-entry-title a {
     bottom: 10px;
     background: #b1adac;
 }
+
+div.job_listings .load_more_jobs {
+    border: 1px solid #edae7e;
+    background: #fff;
+    color: #edae7e;
+    padding: 1rem 3rem;
+}
+
+div.job_listings .load_more_jobs:hover {
+    border: 1px solid #fff;
+    background: #edae7e;
+    color: #fff;
+}
