@@ -72,7 +72,8 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 		<?php } ?>
 
 		<div class="post-excerpt">
-			<?php echo wp_trim_words(get_the_content(), 30) ?>
+			<?php echo wp_trim_words(get_the_content(), 30, '') ?>
+			<a href="<?php echo get_the_permalink() ?>">[...]</a>
 		</div>
 	</article>
 </div>

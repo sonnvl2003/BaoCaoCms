@@ -29,11 +29,11 @@
     display: flex;
     font-size: .7rem;
     text-align: center;
+    border-radius: .3rem;
 }
 
 .custom-entry-meta .custom-entry-meta-item {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 2px 5px;
 }
 
 h2.custom-entry-title {
