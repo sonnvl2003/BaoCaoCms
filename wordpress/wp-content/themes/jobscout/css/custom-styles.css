@@ -1,0 +1,90 @@
+.job-title-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-company-logo {
+    border: 1px solid #eee;
+    margin: 0;
+}
+
+.site-main .entry-content div.job_listings div.job_listings article .job-title-wrap {
+    padding-left: .5rem;
+}
+
+.custom-company-logo {
+    width: 95px;
+    height: 95px;
+}
+
+.created-date {
+    font-size: .7rem;
+    color: #575755;
+    margin-bottom: .2rem;
+}
+
+.custom-entry-meta {
+    background: #f2f2f2;
+    display: flex;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.custom-entry-meta .custom-entry-meta-item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h2.custom-entry-title {
+    font-size: .9rem;
+    margin-bottom: .2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h2.custom-entry-title a {
+    text-decoration: none;
+}
+
+.post-excerpt {
+    margin-top: .3rem;
+    color: #575755;
+    font-size: .7rem;
+}
+
+.site-main .entry-content div.job_listings div.job_listings article {
+    padding: 10px;
+}
+
+.job_listings {
+    padding-top: 1rem;
+}
+
+.entry-content a,
+.entry-summary a,
+.page-content a,
+.comment-content a,
+.widget .textwidget a {
+    text-decoration: none;
+}
+
+.job-manager .full-time,
+.job_listing .full-time,
+.job-types .full-time {
+    color: #000;
+}
+
+.custom-entry-meta-item {
+    position: relative;
+}
+
+.custom-entry-meta-item:not(.custom-entry-meta-item:last-child):after {
+    position: absolute;
+    content: '';
+    left: 100%;
+    width: .05rem;
+    top: 10px;
+    bottom: 10px;
+    background: #b1adac;
+}
