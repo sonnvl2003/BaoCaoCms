@@ -23,7 +23,7 @@ $job_featured = get_post_meta(get_the_ID(), '_featured', true);
 $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 
 ?>
-<div class="col-6">
+<div class="col-6 job-item">
 	<article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr($post->geolocation_lat); ?>" data-latitude="<?php echo esc_attr($post->geolocation_long); ?>">
 
 		<div class="job-title-header-container">
@@ -56,11 +56,11 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 
 					if ($job_salary) { ?>
 						<div class="custom-entry-meta-item custom-salary-amt">
-							<span class="salary"><?php echo esc_html($job_salary) ?>span>
+							<span class="salary"><?php echo esc_html($job_salary) ?><span>
 						</div>
 					<?php }
 					?>
-					<div class="custom-entry-meta-item company-address">
+					<div class="custom-entry-meta-item custom-company-address">
 						<?php the_job_location(true); ?>
 					</div>
 				</div>
@@ -72,7 +72,7 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 		<?php } ?>
 
 		<div class="post-excerpt">
-			<?php echo wp_trim_words(get_the_content(), 30, '') ?>
+			<?php echo wp_trim_words(get_the_content(), 35, '') ?>
 			<a href="<?php echo get_the_permalink() ?>">[...]</a>
 		</div>
 	</article>
