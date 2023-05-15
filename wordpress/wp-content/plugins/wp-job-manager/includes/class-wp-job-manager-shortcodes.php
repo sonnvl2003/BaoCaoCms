@@ -743,7 +743,7 @@ class WP_Job_Manager_Shortcodes
 						// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Template output.
 						echo get_job_listing_pagination($jobs->max_num_pages);
 					} else {
-						echo '<a class="load_more_jobs" href="#"><strong>' . esc_html__('Load more listings', 'wp-job-manager') . '</strong></a>';
+						echo '<a class="custom_load_more_jobs" href="#"><strong>' . esc_html__('View more jobs', 'wp-job-manager') . '</strong></a>';
 					}
 				}
 			} else {
