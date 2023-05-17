@@ -84,4 +84,7 @@ $qry = new WP_Query($args);
 		</section>
 	<?php } ?>
 </div><!-- #primary -->
-<!-- End Module 5 -->
+
+<?php
+get_sidebar();
+get_footer();
