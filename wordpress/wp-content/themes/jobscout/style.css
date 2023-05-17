@@ -616,7 +616,7 @@ dd {
 }
 
 img {
-  height: auto;
+  height: auto ;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */
@@ -2293,151 +2293,6 @@ body.home:not(.banner-enabled) .site-header {
 .menu-wrap .btn-wrap {
   width: 150px;
   text-align: right;
-}
-
-/*========================
-SITE BANNER SECTION
-========================*/
-.site-banner .item {
-  position: relative;
-}
-
-.banner-caption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 9;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.banner-caption .caption-inner {
-  max-width: 770px;
-  margin-left: auto;
-  margin-right: auto;
-  background: red;
-}
-
-.banner-caption .title {
-  margin: 0;
-  font-size: 2.5em;
-  color: #fff;
-  font-weight: 800;
-  line-height: 1.4;
-}
-
-.banner-caption .description {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #fff;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.banner-caption .form-wrap {
-  margin-top: 20px;
-}
-
-.banner-caption div.job_listings {
-  margin-bottom: 0;
-}
-
-.banner-caption .jobscout_job_filters {
-  background: none;
-}
-
-.banner-caption .search-filter-wrap .search-form {
-  max-width: 540px;
-  margin: 0 auto;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs {
-  padding: 0;
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs div.filter_first,
-.banner-caption .jobscout_job_filters .search_jobs div.search_keywords,
-.banner-caption .jobscout_job_filters .search_jobs div.filter_last,
-.banner-caption .jobscout_job_filters .search_jobs div.search_location {
-  float: none;
-  width: auto;
-  padding-right: 0;
-  display: flex;
-  flex: 1;
-  padding-left: 0;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs div.filter_wide,
-.banner-caption .jobscout_job_filters .search_jobs div.search_categories {
-  width: auto;
-  padding-top: 0;
-  padding-left: 0;
-  display: flex;
-  flex: 1;
-}
-
-.banner-caption .jobscout_job_filters .search_submit {
-  display: flex;
-  flex: 0;
-}
-
-.banner-caption .form-wrap form .search_jobs label {
-  display: none;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input,
-.banner-caption .jobscout_job_filters .search_jobs select {
-  border-radius: 0;
-  height: 60px;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
-  font-size: 0.8888em;
-  font-weight: 400;
-  padding: 10px 20px;
-  color: #666;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input::placeholder {
-  color: #666 !important;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input:-ms-input-placeholder {
-  color: #666 !important;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #666 !important;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs>div:first-child input {
-  border-left: none;
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input[type="submit"] {
-  padding: 0;
-  width: 60px;
-  background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23fff" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>');
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
-  text-indent: 70px;
-  overflow: hidden;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
-  background-color: #fff;
-  background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%232ace5e" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>');
 }
 
 /*=========================
@@ -8161,3 +8016,187 @@ RESPONSIVE STYLESHEET
   flex-wrap: wrap !important;
 }
 
+
+/*========================
+SITE BANNER SECTION
+========================*/
+.site-banner .item {
+  position: relative;
+}
+.wp-custom-header img{
+  height: 400px !important;
+}
+.banner-caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-caption .caption-inner {
+  max-width: 1000px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-caption .title {
+  text-align: left;
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.banner-caption .description {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.banner-caption .form-wrap {
+  margin-top: 0 !important;
+}
+
+.banner-caption div.job_listings {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.banner-caption .jobscout_job_filters {
+  background: none;
+}
+
+.banner-caption .search-filter-wrap .search-form {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs {
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs div.filter_first,
+.banner-caption .jobscout_job_filters .search_jobs div.search_keywords,
+.banner-caption .jobscout_job_filters .search_jobs div.filter_last,
+.banner-caption .jobscout_job_filters .search_jobs div.search_location {
+  float: none;
+  width: auto;
+  padding-right: 20px !important;
+  display: flex;
+  flex: 1;
+  padding-left: 0;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs div.search_location {
+  width: 100px !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs div.filter_wide,
+.banner-caption .jobscout_job_filters .search_jobs div.search_categories {
+  width: auto;
+  padding-top: 0;
+  padding-left: 0;
+  display: flex;
+  flex: 1;
+}
+
+.banner-caption .jobscout_job_filters .search_submit {
+  display: flex;
+  flex: 0;
+}
+
+.banner-caption .form-wrap form .search_jobs .search_keywords label .bi-search {
+  display: block;
+  height: 50px;
+  background: #ffffff;
+  font-size: 1em;
+  padding:  15px 15px ;
+  color: orange;
+  font-weight: bold !important;
+}
+
+.banner-caption .form-wrap form .search_jobs .search_location label .bi-geo-alt {
+  display: block;
+  height: 50px;
+  background: #ffffff;
+  font-size: 1em;
+  padding:  15px 15px ;
+  color: orange;
+  font-weight: bold !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input,
+.banner-caption .jobscout_job_filters .search_jobs select {
+  border-radius: 0;
+  height: 50px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: none !important;
+  font-size: 0.8888em;
+  font-weight: 400;
+  padding:  20px 0px !important;
+  color: #666;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs .search_location select {
+  border-radius: 0;
+  height: 50px;
+  width: 200px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: none !important;
+  font-size: 0.8888em;
+  font-weight: 400;
+  padding: 0 !important;
+  color: #666;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input::placeholder {
+  color: #666 !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input:-ms-input-placeholder {
+  color: #666 !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #666 !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs>div:first-child input {
+  border-left: none;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input[type="submit"] {
+  padding: 0;
+  width: 200px;
+  margin-left: -210px;
+  text-indent: 0 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  background: orange;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 0.6;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
+  background-color: #fff;
+  color: #666;
+}

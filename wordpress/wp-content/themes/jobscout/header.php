@@ -19,6 +19,7 @@ do_action('jobscout_doctype');
 
 <head itemscope itemtype="https://schema.org/WebSite">
     <link rel='stylesheet' id='jobscout-css' href='http://wordpress.local/wp-content/themes/jobscout/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <?php
     /**
      * Before wp_head
